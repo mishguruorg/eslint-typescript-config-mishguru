@@ -1,0 +1,13 @@
+{
+  "name": "eslint-config-mishguru",
+  "version": "1.0.0",
+  "description": "ESlint Config for Mish Guru",
+  "main": "index.js",
+  "repository": "https://github.com/mishguruorg/eslint-config-mishguru",
+  "author": "George Czabania <george@mish.guru>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard-jsx": "^3.2.0"
+  }
+}
