@@ -1,3 +1,12 @@
 module.exports = {
-  extends: ['standard', 'standard-jsx']
+  parser: 'babel-eslint',
+  extends: [
+    'standard',
+    'standard-jsx',
+    'standard-babel'
+  ],
+  plugins: [
+    'babel',
+    'standard'
+  ]
 }
