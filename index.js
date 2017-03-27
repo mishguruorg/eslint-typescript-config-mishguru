@@ -8,5 +8,9 @@ module.exports = {
   plugins: [
     'babel',
     'standard'
+  ],
+  rules: [
+    'arrow-body-style': [2, 'always'],
+    'object-curly-spacing': [2, 'always']
   ]
 }
