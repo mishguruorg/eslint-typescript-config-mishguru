@@ -7,7 +7,8 @@ module.exports = {
   ],
   plugins: [
     'babel',
-    'standard'
+    'standard',
+    'flowtype'
   ],
   rules: {
     // Require braces in arrow function body
