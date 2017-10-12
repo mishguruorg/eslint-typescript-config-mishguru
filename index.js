@@ -3,7 +3,8 @@ module.exports = {
   extends: [
     'standard',
     'standard-jsx',
-    'standard-babel'
+    'standard-babel',
+    'plugin:flowtype/recommended'
   ],
   plugins: [
     'babel',
