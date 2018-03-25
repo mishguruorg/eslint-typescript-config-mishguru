@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-mishguru",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "ESlint Config for Mish Guru",
   "main": "index.js",
   "repository": "https://github.com/mishguruorg/eslint-config-mishguru",
