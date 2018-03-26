@@ -7,7 +7,7 @@
   "author": "George Czabania <george@mish.guru>",
   "license": "MIT",
   "dependencies": {
-    "babel-eslint": "8.2.2",
+    "babel-eslint": "^7.2.3",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-babel": "^0.0.2",
