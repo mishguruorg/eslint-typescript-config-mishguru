@@ -17,11 +17,6 @@ jobs:
             key: "v1-npm-cache-{{ checksum \"package.json\" }}"
             paths:
               - "./node_modules"
-        - run: "npm run build"
-        - save_cache:
-            key: "v1-project-cache-{{ checksum \"package.json\" }}"
-            paths:
-              - "."
     # lint:
     #   working_directory: "~/mishguru-eslint-config"
     #   docker:
@@ -53,7 +48,7 @@ jobs:
             key: "v1-git-cache-{{ .Branch }}-{{ .Revision }}"
         - checkout
         - restore_cache:
-            key: "v1-project-cache-{{ checksum \"package.json\" }}"
+            key: "v1-npm-cache-{{ checksum \"package.json\" }}"
         - run: "npm run test -- --verbose"
 workflows:
   version: 2
