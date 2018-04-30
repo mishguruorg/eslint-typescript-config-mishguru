@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-mishguru",
+  "name": "@mishguru/eslint-config",
   "version": "2.0.3",
   "description": "ESlint Config for Mish Guru",
   "main": "index.js",
