@@ -4,12 +4,14 @@ module.exports = {
     'standard',
     'standard-jsx',
     'standard-babel',
-    'plugin:flowtype/recommended'
+    'plugin:flowtype/recommended',
+    "plugin:react/recommended"
   ],
   plugins: [
     'ava',
     'babel',
     'flowtype',
+    'react',
     'standard'
   ],
   rules: {
@@ -27,6 +29,10 @@ module.exports = {
 
     // AVA rules
     // https://github.com/avajs/eslint-plugin-ava#rules
-    "ava/no-only-test": "error"
+    'ava/no-only-test': 'error',
+
+    // Prevent missing props validation in a React component definition
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md 
+    'react/prop-types': 0
   }
 }
