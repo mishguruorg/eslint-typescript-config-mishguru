@@ -7,9 +7,10 @@ module.exports = {
     'plugin:flowtype/recommended'
   ],
   plugins: [
+    'ava',
     'babel',
-    'standard',
-    'flowtype'
+    'flowtype',
+    'standard'
   ],
   rules: {
     // Require braces in arrow function body
@@ -22,6 +23,10 @@ module.exports = {
 
     // Enforce consistent spacing inside braces
     // http://eslint.org/docs/rules/object-curly-spacing
-    'object-curly-spacing': [2, 'always']
+    'object-curly-spacing': [2, 'always'],
+
+    // AVA rules
+    // https://github.com/avajs/eslint-plugin-ava#rules
+    "ava/no-only-test": "error"
   }
 }
