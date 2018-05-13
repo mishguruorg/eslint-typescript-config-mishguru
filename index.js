@@ -11,6 +11,7 @@ module.exports = {
     'ava',
     'babel',
     'flowtype',
+    'mocha',
     'react',
     'standard'
   ],
@@ -33,6 +34,10 @@ module.exports = {
 
     // Prevent missing props validation in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md 
-    'react/prop-types': 0
+    'react/prop-types': 0,
+    
+    // mocha rules
+    // https://github.com/lo1tuma/eslint-plugin-mocha
+    "mocha/no-exclusive-tests": "error"
   }
 }
