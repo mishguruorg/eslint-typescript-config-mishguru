@@ -5,7 +5,7 @@ module.exports = {
     'standard-jsx',
     'standard-babel',
     'plugin:flowtype/recommended',
-    "plugin:react/recommended"
+    'plugin:react/recommended'
   ],
   plugins: [
     'ava',
@@ -38,6 +38,11 @@ module.exports = {
     
     // mocha rules
     // https://github.com/lo1tuma/eslint-plugin-mocha
-    "mocha/no-exclusive-tests": "error"
+    'mocha/no-exclusive-tests': 'error',
+
+    // flowtype rules
+    'flowtype/require-valid-file-annotation': [ 2, 'never', {
+      'annotationStyle': 'line'
+    }]
   }
 }
