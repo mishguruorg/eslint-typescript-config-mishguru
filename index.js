@@ -1,19 +1,22 @@
 module.exports = {
   parser: 'babel-eslint',
-  extends: [
-    'standard',
-    'standard-jsx',
-    'standard-babel',
-    'plugin:flowtype/recommended',
-    'plugin:react/recommended'
-  ],
   plugins: [
     'ava',
     'babel',
     'flowtype',
     'mocha',
     'react',
-    'standard'
+    'standard',
+    'mishguru'
+  ],
+  extends: [
+    'standard',
+    'standard-jsx',
+    'standard-babel',
+
+    'plugin:flowtype/recommended',
+    'plugin:react/recommended',
+    'plugin:mishguru/recommended'
   ],
   rules: {
     // Require braces in arrow function body
