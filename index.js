@@ -50,5 +50,10 @@ module.exports = {
 
     // max lines
     'max-lines': [ 'error', 400 ]
+  },
+  settings: {
+    react: {
+      version: '16.8'
+    }
   }
 }
