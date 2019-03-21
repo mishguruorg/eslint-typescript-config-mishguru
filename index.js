@@ -46,6 +46,9 @@ module.exports = {
     // flowtype rules
     'flowtype/require-valid-file-annotation': [ 2, 'never', {
       'annotationStyle': 'line'
-    }]
+    }],
+
+    // max lines
+    'max-lines': [ 'error', 400 ]
   }
 }
