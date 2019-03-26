@@ -10,4 +10,8 @@ const doNothing = (input: number): number => {
   return multiply(divide(input))
 }
 
+export const runDoNothingAndReturn = () => {
+  doNothing(10)
+}
+
 export default doNothing
