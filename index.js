@@ -230,5 +230,7 @@ module.exports = {
         requireLast: false,
       },
     }],
+
+    '@typescript-eslint/no-var-requires': 'warn',
   },
 }
