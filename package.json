@@ -1,6 +1,6 @@
 {
   "name": "@mishguru/eslint-typescript-config",
-  "version": "5.9.0",
+  "version": "5.10.0",
   "description": "ESlint Config for Mish Guru (typescript variation)",
   "main": "index.js",
   "repository": "https://github.com/mishguruorg/eslint-typescript-config-mishguru",
