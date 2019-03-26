@@ -7,6 +7,7 @@ test('load config in eslint to validate all rule syntax is correct', function (t
 
   const cli = new CLIEngine({
     useEslintrc: false,
+    extensions: ['ts'],
     configFile: path.join(__dirname, '../index.js')
   })
 

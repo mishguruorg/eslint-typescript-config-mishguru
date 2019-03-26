@@ -1,5 +1,3 @@
-// @flow
-
 type NumberType = number
 
 const MULTIPLIER = 20

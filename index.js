@@ -1,21 +1,14 @@
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
   plugins: [
+    '@typescript-eslint/eslint-plugin',
     'ava',
-    'babel',
-    'flowtype',
-    'mocha',
-    'react',
     'standard',
     'mishguru'
   ],
   extends: [
     'standard',
     'standard-jsx',
-    'standard-babel',
-
-    'plugin:flowtype/recommended',
-    'plugin:react/recommended',
     'plugin:mishguru/recommended'
   ],
   rules: {
@@ -35,25 +28,7 @@ module.exports = {
     // https://github.com/avajs/eslint-plugin-ava#rules
     'ava/no-only-test': 'error',
 
-    // Prevent missing props validation in a React component definition
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md 
-    'react/prop-types': 0,
-    
-    // mocha rules
-    // https://github.com/lo1tuma/eslint-plugin-mocha
-    'mocha/no-exclusive-tests': 'error',
-
-    // flowtype rules
-    'flowtype/require-valid-file-annotation': [ 2, 'never', {
-      'annotationStyle': 'line'
-    }],
-
     // max lines
     'max-lines': [ 'error', 400 ]
-  },
-  settings: {
-    react: {
-      version: '16.8'
-    }
   }
 }
