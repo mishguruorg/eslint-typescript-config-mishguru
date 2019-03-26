@@ -234,5 +234,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
 
     '@typescript-eslint/no-var-requires': 'warn',
+
+    '@typescript-eslint/no-empty-interface': 'warn'
   },
 }
