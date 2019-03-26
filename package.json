@@ -1,25 +1,18 @@
 {
   "name": "@mishguru/eslint-typescript-config",
   "version": "5.7.0",
-  "description": "ESlint Config for Mish Guru",
+  "description": "ESlint Config for Mish Guru (typescript variation)",
   "main": "index.js",
-  "repository": "https://github.com/mishguruorg/eslint-config-mishguru",
-  "author": "George Czabania <george@mish.guru>",
+  "repository": "https://github.com/mishguruorg/eslint-typescript-config-mishguru",
+  "author": "Mish Guru <dev@mish.guru>",
   "license": "MIT",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "1.5.0",
     "@typescript-eslint/parser": "1.5.0",
     "eslint": "5.15.3",
-    "eslint-config-standard": "12.0.0",
-    "eslint-config-standard-jsx": "6.0.2",
     "eslint-plugin-ava": "6.0.0",
-    "eslint-plugin-import": "2.16.0",
     "eslint-plugin-mishguru": "1.3.0",
-    "eslint-plugin-node": "8.0.1",
-    "eslint-plugin-promise": "4.0.1",
-    "eslint-plugin-react": "7.12.4",
-    "eslint-plugin-standard": "4.0.0",
-    "typescript": "^3.3.4000"
+    "typescript": "3.3.4000"
   },
   "scripts": {
     "test": "tape test/*.js"

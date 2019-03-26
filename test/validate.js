@@ -12,11 +12,14 @@ test('load config in eslint to validate all rule syntax is correct', function (t
   })
 
   const report = cli.executeOnFiles([
-    path.join(__dirname, '../sample')
+    path.join(__dirname, '../sample'),
+    path.join(__dirname, '../index.js'),
   ])
 
-  if (report.errorCount > 0) {
-    console.log(report.results[0].messages)
+  for (const file of report.results) {
+    if (file.errorCount > 0) {
+      console.log(file.messages)
+    }
   }
 
   t.ok(report.errorCount === 0)
