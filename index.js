@@ -116,7 +116,6 @@ module.exports = {
     'no-use-before-define': ['error', { 'functions': false, 'classes': false, 'variables': false }],
     'no-useless-call': 'error',
     'no-useless-computed-key': 'error',
-    'no-useless-constructor': 'error',
     'no-useless-escape': 'error',
     'no-useless-rename': 'error',
     'no-useless-return': 'error',
@@ -231,10 +230,16 @@ module.exports = {
       },
     }],
 
+    // Require explicit return types on functions and class methods
     '@typescript-eslint/explicit-function-return-type': 'off',
 
+    // Disallows the use of require statements except in import statements
     '@typescript-eslint/no-var-requires': 'warn',
 
-    '@typescript-eslint/no-empty-interface': 'warn'
+    // Disallow the declaration of empty interfaces
+    '@typescript-eslint/no-empty-interface': 'warn',
+
+    // Disallow unnecessary constructors
+    '@typescript-eslint/no-useless-constructor': 'error',
   },
 }
