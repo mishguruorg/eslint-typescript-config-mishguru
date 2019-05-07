@@ -241,5 +241,7 @@ module.exports = {
 
     // Disallow unnecessary constructors
     '@typescript-eslint/no-useless-constructor': 'error',
+
+    '@typescript-eslint/no-explicit-any': 'off'
   },
 }
