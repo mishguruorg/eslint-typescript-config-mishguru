@@ -18,7 +18,6 @@ module.exports = {
     'arrow-spacing': ['error', { before: true, after: true }],
     'block-spacing': ['error', 'always'],
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
-    'comma-dangle': ['error', 'only-multiline'],
     'comma-spacing': ['error', { before: false, after: true }],
     'comma-style': ['error', 'last'],
     'constructor-super': 'error',
