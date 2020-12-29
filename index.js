@@ -195,8 +195,6 @@ module.exports = {
     // max lines
     'max-lines': ['error', 400],
 
-    '@typescript-eslint/camelcase': ['error', { 'properties': 'never' }],
-
     '@typescript-eslint/indent': ['error', 2, {
       SwitchCase: 1,
       VariableDeclarator: 1,
